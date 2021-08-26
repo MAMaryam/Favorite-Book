@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    {{user.first_name}}
+
+    <a href="/logout",>logout</a>
+
+
+    <div>
+        <form method="post" action="/addbooks">
+            {% csrf_token %}
+            <div class="jumb actionotrom" ></div>
+                <h2>Add Favorite Book</h2>
+         </div>
+          <div class="form-control">
+              
+              <input type="text" name="Title" placeholder= "title"/>
+              <br> <br>
+              <input type="Discription" name="password" placeholder= "Discription"/>
+              <br> <br>
+              <input type="submit" value="add" class= "btn btn_primary"/>
+          </div>  
+         </form>
+
+    </div>
+</body>
+</html>
